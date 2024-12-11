@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .mySection {
+            margin: 5px;
+            padding: 10px;
+        }
+        .marginDown {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="mySection marginDown">
+        <h3 id="myTitle">The Badaimma Group of Industries</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea esse ipsum debitis. Temporibus molestiae maiores modi quod fuga autem vel quos facilis alias necessitatibus. Sunt libero natus illum esse delectus.</p>
+    </section>
+    <section class="mySection">
+        <h3>Square Development Group</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea esse ipsum debitis. Temporibus molestiae maiores modi quod fuga autem vel quos facilis alias necessitatibus. Sunt libero natus illum esse delectus.</p>
+    </section>
+    
+    <!-- my custom script -->
+     <script>
+        const i = document.querySelectorAll(".mySection");
+
+        for (const j of i) {
+            j.style.border = '2px solid black';
+            j.style.borderRadius = '8px';
+        }
+
+     </script>
+</body>
+
+</html>
