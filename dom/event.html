@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ()
+    <button id="firstButton">Method 1</button>
+    <button onclick="changeTextOfButton(this)">Method 2</button>
+    <button id="secondButton" onclick="anotherMethod()">Button 3</button>
+    ()
+    <script>
+        // self learn - method 1 (onclick)
+        const firstClick = document.getElementById('firstButton');
+        //firstClick.onclick = console.log('clicked from js!');
+
+        // self learn - method 2 (event handler)
+        function changeTextOfButton(id) {
+            id.innerText = "hit button 2";
+        }
+
+        // method 2 - test 2 
+        function anotherMethod() {
+            onclick = console.log("hit button 3")
+        }
+
+    </script>
+</body>
+</html>

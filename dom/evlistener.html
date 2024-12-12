@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .textOne {font-size: 20px}
+    </style>
+
+</head>
+<body>
+
+    <button id="firstButton">Button 1</button>
+    <button id="secondButton">Button 2</button>
+    <button id="thirdButton">Button 3</button>
+
+    <div id="textOne">This is a Text</div>
+
+    <script>
+        // self learn - method 1 
+        const button1 = document.getElementById("firstButton");
+        let text = "Hit Button";
+        button1.addEventListener("click", function() {
+            console.log(text, "1");
+        });
+
+        // self learn - method 2 
+        const button2 = document.getElementById("secondButton");
+        button2.addEventListener("click", eventListnerMethod);
+        function eventListnerMethod() {
+            console.log(text, "2");
+        }
+
+        // self learn - method 3 (mouseover)
+        const textData = document.getElementById("textOne");
+        textData.addEventListener("mouseover", eventListnerMethod1);
+
+        function eventListnerMethod1() {
+            textData.innerText = "damn, its changing";
+        }
+
+
+    </script>
+
+</body>
+</html>
